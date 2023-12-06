@@ -1,0 +1,15 @@
+<div class="w-full flex justify-center items-center flex-col gap-y-4">
+    <h2 class="text-white text-3xl w-full">Directiva &#64;if</h2>
+    <div class="w-[500px] p-10 rounded-md flex justify-center items-center gap-x-20 mt-10 border border-white">
+        <button
+            (click)="changeState()"
+            class="bg-indigo-700 py-3 w-1/2 hover:bg-indigo-800 text-white uppercase font-semibold cursor-pointer rounded-md shadow-md shadow-indigo-900"
+        >{{ state ? 'Apagar' : 'Encender' }}</button>
+
+        @if(state){
+            <p class="text-2xl text-yellow-400 w-1/2">Luz prendida</p>
+        }@else{
+            <p class="text-2xl text-gray-600 w-1/2">Luz apagada</p>
+        }
+    </div>
+</div>
