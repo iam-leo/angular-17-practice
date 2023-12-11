@@ -6,11 +6,12 @@ import { DirectivaIfComponent } from './components/directiva-if/directiva-if.com
 import { DirectivaForComponent } from './components/directiva-for/directiva-for.component';
 import { DecoradorInputComponent } from './components/decorador-input/decorador-input.component';
 import { DecoradorOutputComponent } from './components/decorador-output/decorador-output.component';
+import { BloqueDeferComponent } from './components/bloque-defer/bloque-defer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, IntroComponent, DirectivaIfComponent, DirectivaForComponent, DecoradorInputComponent, DecoradorOutputComponent],
+  imports: [CommonModule, RouterOutlet, IntroComponent, DirectivaIfComponent, DirectivaForComponent, DecoradorInputComponent, DecoradorOutputComponent, BloqueDeferComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

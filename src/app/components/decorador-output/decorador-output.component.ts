@@ -14,5 +14,4 @@ export class DecoradorOutputComponent {
   emitirEvento(msj: string){
     this.mensaje.emit(msj);
   }
-
 }
